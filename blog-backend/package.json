@@ -15,6 +15,7 @@
     "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.5.0",
     "esm": "^3.2.25",
+    "joi": "^17.6.2",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^12.0.0",
