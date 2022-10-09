@@ -1,11 +1,12 @@
 <img src="https://user-images.githubusercontent.com/98297436/194762961-ae1d98eb-c8c4-4b4e-b535-0c6a325ce8c6.png" width="400" height="400"/>
-# 🦄Blog-Project🦄
+
+# 🦄테코몽 (TECOMOG)🦄
 
 ![version](<https://img.shields.io/badge/version-0.1.0-red>)   ![react](<https://img.shields.io/badge/react-16.13.1-yellow>)   ![mobx](<https://img.shields.io/badge/mobx-5.15.5-blueviolet>)  ![documentation](<https://img.shields.io/badge/documentation-yes-ff69b4>)
 
-> 실제로 운영할 기술블로그 개발을 하고 있습니다.
->
-> 기술블로그 이름은 **WHAN BLOG** 입니다.
+>안녕하세요 **TECOMOG BLOG** 입니다.
+>**TECOMOG**이라는 이름은 TECH, COMMUNICATION, BLOG의 합성어로 기존 기술블로그 방식에서 커뮤니케이션을 접목 시켜 새롭게 만든 BLOG입니다.
+> 
 
 
 
