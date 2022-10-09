@@ -14,7 +14,7 @@
 
 
 
-## 📚Wiki
+## 📆 프로젝트 기간
 
 ##### ✔️Develop Period : 2022.10.05 ~ 2022.11.15
 
@@ -34,6 +34,8 @@
   <img src="https://img.shields.io/badge/Koa-33333D?style=for-the-badge&logo=Koa&logoColor=white">
 </div>
 
+## 📚REST API Wiki
+[▶ 테크몽 REST API 바로가기](https://github.com/whansoo/Blog-Project/wiki/%ED%85%8C%ED%81%AC%EB%AA%BD-REST-API)
 ## 📌프로젝트 개발 일지
 #### **1. 2022.10.04 - 프로젝트 생성 및 서버 구현 완료**   
 
