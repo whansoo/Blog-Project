@@ -1,6 +1,6 @@
 ![테크몽](https://user-images.githubusercontent.com/98297436/195282182-3e444093-7c03-4191-8625-ce201113d410.gif)
 
-# 🦄테코몽 (TECOMOG)🦄
+# 🦄테코몽 (TECOMOG)
 
 ![version](<https://img.shields.io/badge/version-0.1.0-red>)   ![react](<https://img.shields.io/badge/react-16.13.1-yellow>)   ![mobx](<https://img.shields.io/badge/mobx-5.15.5-blueviolet>)  ![documentation](<https://img.shields.io/badge/documentation-yes-ff69b4>)
 
@@ -36,6 +36,8 @@
 
 ## 📚REST API Wiki
 [▶ 테크몽 REST API 바로가기](https://github.com/whansoo/Blog-Project/wiki/%ED%85%8C%ED%81%AC%EB%AA%BD-REST-API)
+## 와이어 프레임
+https://www.figma.com/file/VdFqvp1yaHNDdWvI2fotJX/blog%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0%3A1
 ## 📌프로젝트 개발 일지
 #### **1. 2022.10.04 - 프로젝트 생성 및 서버 구현 완료**   
 
