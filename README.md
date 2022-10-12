@@ -1,4 +1,4 @@
-<img src="https://user-images.githubusercontent.com/98297436/194762961-ae1d98eb-c8c4-4b4e-b535-0c6a325ce8c6.png" width="400" height="400"/>
+![테크몽](https://user-images.githubusercontent.com/98297436/195282182-3e444093-7c03-4191-8625-ce201113d410.gif)
 
 # 🦄테코몽 (TECOMOG)🦄
 
@@ -20,7 +20,7 @@
 
 ##### ✔️Developer : whansoo
 
-##### ✔️기능 구현 목표 : 로그인/회원가입, 글쓰기/조회, 댓글, 마이페이지(비밀번호 찾기,프로필 사진등록), 댓글수, 추천수 필터적용
+##### ✔️기능 구현 목표 : 로그인/회원가입, 글쓰기/조회, 댓글, 마이페이지(비밀번호 찾기,프로필 사진등록), 댓글수, 추천수 필터적용, 실시간채팅
 
 ## 🔨기술 스택
 <div align="center">
