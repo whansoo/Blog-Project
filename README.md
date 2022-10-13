@@ -87,3 +87,13 @@ https://www.figma.com/file/VdFqvp1yaHNDdWvI2fotJX/blog%EC%99%80%EC%9D%B4%EC%96%B
 - 토큰 검증하기 : if ,try catch구문을 통해 사용자의 토큰을 확인한 후 검증하는 작업을 한다.
 - 로그아웃 구현 : 쿠키를 지운다.
 </details>
+
+<details>
+    <summary>5. 2022.10.13 - posts API에 회원 인증 시스템 구현</summary></br>
+
+- post 스키마 수정 : post스키마 안에 id와 username을 넣어 수정해준다.
+- 로그인 한 후 API 사용 가능 : checkLoggedIn이라는 미들웨어를 만들어서 로그인을 해야만 블로그 글쓰기, 수정, 삭제가 가능 하도록 구현한다. 그리고 라우터에 사용한다.
+- 글 작성시 사용자 정보 넣기 : 로그인된 사용자만 글을 작성할 수 있게 했으니, 글 작성 할때 사용자 정보를 넣어서 데이터 베이스에 저장 한다.
+- 글 수정 및 삭제 권한 확인 : findById로 id가 포함된 포스트를 찾은 후 ctx.state에 담는다. 포스트가 존재하지 않을 때 404(Not Found)에러를 보낸다. checkOwnPost 미들웨어는 id로 찾은 포스트가 로그인 중인 사용자가 작성한 포스트인지 확인 해 준다. 만약 사용자의 포스트가 아니라면 403에러를 보낸다.
+- username/tags로 필터링 하기 : 특정 사용자가 작성한 포스트만 조회하거나 특정 태그가 있는 포스트만 조회 가능.
+</details>
