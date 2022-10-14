@@ -2,7 +2,7 @@ import mongoose, { Schema } from 'mongoose';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
-const UserSchema = new Schema({
+const UserSchema = new  Schema({
     username: String,
     hashedPassword: String,
         
@@ -20,15 +20,15 @@ UserSchema.methods.checkPassword = async function(password) {
 
 UserSchema.statics.findByUsername = function(username) {
     return this.findOne({ username });
-};
+}
+
 
 UserSchema.methods.serialize = function() {
     const data = this.toJSON();
     delete data.hashedPassword;
     // console.log(data);
     return data;
-};
-
+}
 UserSchema.methods.generateToken = function() {
     const token = jwt.sign(
       //첫 번째 파라미터에는 토큰 안에 집어넣고 싶은 데이터를 넣습니다.
@@ -43,6 +43,5 @@ UserSchema.methods.generateToken = function() {
     );
     return token;
 }
-
 const User = mongoose.model('User', UserSchema);
 export default User;
