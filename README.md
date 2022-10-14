@@ -39,6 +39,7 @@
 ## 와이어 프레임
 https://www.figma.com/file/VdFqvp1yaHNDdWvI2fotJX/blog%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84?node-id=0%3A1
 ## 📌프로젝트 개발 일지
+### ✔️Back End
 <details>
     <summary>1. 2022.10.04 - 프로젝트 생성 및 서버 구현 완료</summary></br>
    
@@ -96,4 +97,11 @@ https://www.figma.com/file/VdFqvp1yaHNDdWvI2fotJX/blog%EC%99%80%EC%9D%B4%EC%96%B
 - 글 작성시 사용자 정보 넣기 : 로그인된 사용자만 글을 작성할 수 있게 했으니, 글 작성 할때 사용자 정보를 넣어서 데이터 베이스에 저장 한다.
 - 글 수정 및 삭제 권한 확인 : findById로 id가 포함된 포스트를 찾은 후 ctx.state에 담는다. 포스트가 존재하지 않을 때 404(Not Found)에러를 보낸다. checkOwnPost 미들웨어는 id로 찾은 포스트가 로그인 중인 사용자가 작성한 포스트인지 확인 해 준다. 만약 사용자의 포스트가 아니라면 403에러를 보낸다.
 - username/tags로 필터링 하기 : 특정 사용자가 작성한 포스트만 조회하거나 특정 태그가 있는 포스트만 조회 가능.
+</details>
+
+### ✔️Front End
+<details>
+    <summary>1. 2022.10.14 - frontend 시작 작업 설정 완료</summary></br>
+
+- 
 </details>
