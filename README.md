@@ -103,5 +103,9 @@ https://www.figma.com/file/VdFqvp1yaHNDdWvI2fotJX/blog%EC%99%80%EC%9D%B4%EC%96%B
 <details>
     <summary>1. 2022.10.14 - frontend 시작 작업 설정 완료</summary></br>
 
-- 
+- frontend 시작 : react 프로젝트 생성, 자동 import 기능을 할 수 있게 jsconfig.json 파일을 생성
+- 라우터 적용 : react-router-dom 라이브러리 설치, index.js에 BrowserRouter로 App을 감싼다.그리고 App.js에서 Route를 이용하여 각 라우트의 경로를 지정한다.
+- 스타일 설정 : styled-components 설치한다. styled-components는 컴포넌트 기반으로 CSS를 작성할 수 있게 도와주는 라이브러리이다. 장점은 Scss라이브러리 설치 없이 Scss 문법을 사용할 수 있다.자유로운 CSS 커스텀 컴포넌트를 만들 수 있다.컴포넌트의 props를 참조할 수 있으며, props의 값에 따라 스타일을 다르게 코딩 할 수 있다.
+- 리덕스 적용 : redux 라이브러리 설치 한다. redux는 상태관리를 하는 라이브러리 이고 장점은 1.state를 쉽게 관리할 수 있다. 2. 웹사이트의 상태를 어디서 관리할지 고민하지 않아도 된다. 3. 어떤 액션이 취해졌고, 어떤 데이터가 어떻게 변경되었는지 쉽게 알 수 있다. 이런 것들을 떠나서 리덕스를 배워보니 편하고 취향에 맞아서 계속 사용 하게 되는 것 같다.
+- 리덕스 사가 적용 : 리덕스 사가 장점은 1.비동기 작업을 할 때 기존 요청을 취소 처리 할 수 있다. 2.특정 액션이 발생했을 때 이에 따라 다른 액션이 디스패치되게끔 하거나, 자바스크립트 코드를 실행 할 수 있다. 3. 웹소켓을 사용하는 경우 Channel 이라는 기능을 사용하여 더욱 효율적으로 코드를 관리 할 수 있다. 4.API 요청이 실패했을 때 재요청하는 작업을 할 수 있다.
 </details>
