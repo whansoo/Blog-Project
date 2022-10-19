@@ -1,9 +1,11 @@
 import React from "react";
-
+import Slider from "../components/Slider";
+import HeaderContainer from "../containers/common/HeaderContainer";
 const PostListPage = () => {
     return (
         <>
-         포스트리스트
+        <HeaderContainer/>
+        <Slider/>
         </>
     )
 };
