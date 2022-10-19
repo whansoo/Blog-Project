@@ -5,15 +5,16 @@ import styled from 'styled-components'
 
 const Wrap = styled.div`
     font-family: 'Nanum Gothic', sans-serif;
-    
     text-decoration: none;
     border-collapse: collapse;
     margin: 0px;
     padding: 0px;
     color: black;
-
+    
 `
 const Intro = styled.div`
+    position: fixed;
+    top: 0;
     background: #fff;
     box-shadow: 0 1px 0 0 #d6d6d6;
     z-index: 9999;

@@ -1,6 +1,5 @@
-// import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
-// import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import ArrowLeftOutlinedIcon from '@mui/icons-material/ArrowLeftOutlined';
+import ArrowRightOutlinedIcon from '@mui/icons-material/ArrowRightOutlined';
 import { useState } from "react";
 import styled from "styled-components";
 import { sliderItems } from "../data";
@@ -8,9 +7,9 @@ import { sliderItems } from "../data";
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
-  margin: 20px auto;
+  margin: 100px auto;
   width: 90%;
-  height: 80vh;
+  height: 65vh;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -36,6 +35,7 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div`
+
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
@@ -43,6 +43,7 @@ const Wrapper = styled.div`
 `;
 
 const Slide = styled.div`
+
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -52,26 +53,28 @@ const Slide = styled.div`
 
 const ImgContainer = styled.div`
   height: 90%;
+  margin-bottom: 100px;
   flex: 1;
 `;
 
 const Image = styled.img`
   height: 80%;
+  width: 95%;
 `;
 
 const InfoContainer = styled.div`
   flex: 1;
-  margin-bottom: 100px;
-  padding: 50px;
+  margin-bottom: 350px;
+  
 `;
 
 const Title = styled.h1`
-  font-size: 60px;
+  font-size: 40px;
 `;
 
 const Desc = styled.p`
-  margin: 50px 0px;
-  font-size: 15px;
+  margin: 40px 0px;
+  font-size: 13px;
   font-weight: 500;
   letter-spacing: 3px;
 `;
@@ -88,14 +91,6 @@ const Button = styled.button`
       background-color: #c8c8c8;
       transform: scale(1.1);
     }
-  /* padding: 10px;
-  font-size: 20px;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 30px;
-  &:hover {
-      background-color: #c8c8c8;
-    } */
 `;
 
 const Slider = () => {
@@ -112,8 +107,7 @@ const Slider = () => {
     <Container>
         
       <Arrow direction="left" onClick={() => handleClick("left")}>
-        {/* <ArrowLeftOutlinedIcon/> */}
-        <ArrowBackIcon/> 
+        <ArrowLeftOutlinedIcon/>
       </Arrow>
      
       <Wrapper slideIndex={slideIndex}>
@@ -131,7 +125,7 @@ const Slider = () => {
         ))}
       </Wrapper>
       <Arrow direction="right" onClick={() => handleClick("right")}>
-        {/* <ArrowRightOutlinedIcon /> */}
+        <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
   );

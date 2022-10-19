@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter } from '../node_modules/react-router-dom/index';
+import { BrowserRouter } from '../node_modules/react-router-dom/dist/index';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
 import { composeWithDevTools } from '../node_modules/redux-devtools-extension/index';
