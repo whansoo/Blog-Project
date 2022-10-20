@@ -7,8 +7,8 @@ import RoomIcon from '@mui/icons-material/Room';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import styled from "styled-components";
 
-const Container = styled.div`
-  display: flex;
+const Container = styled.div`     
+    display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -113,16 +113,16 @@ const Footer = () => {
       <Center>
         <Title>Useful Links</Title>
         <List>
-          <ListItem>Home</ListItem>
-          <ListItem>Cart</ListItem>
-          <ListItem>Man Fashion</ListItem>
-          <ListItem>Woman Fashion</ListItem>
-          <ListItem>Accessories</ListItem>
-          <ListItem>My Account</ListItem>
-          <ListItem>Order Tracking</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Wishlist</ListItem>
-          <ListItem>Terms</ListItem>
+          <ListItem>홈</ListItem>
+          <ListItem>주소</ListItem>
+          <ListItem>이메일</ListItem>
+          <ListItem>연락처</ListItem>
+          <ListItem>지원</ListItem>
+          <ListItem>채용</ListItem>
+          <ListItem>취업</ListItem>
+          <ListItem>나이</ListItem>
+          <ListItem>키</ListItem>
+          <ListItem>학교</ListItem>
         </List>
       </Center>
       <Right>

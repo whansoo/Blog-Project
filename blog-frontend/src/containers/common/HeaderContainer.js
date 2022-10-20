@@ -1,11 +1,12 @@
 import React from "react";
-import Navbar from "../../components/common/Header";
-// import Header from "../../components/common/Header";
+import { useSelector } from "react-redux";
+import Header from "../../components/common/Header";
+
 
 
 const HeaderContainer = () => {
-   
-    return <Navbar />;
+    const { user } = useSelector(({ user }) => ({ user: user.user }));
+    return <Header user={user}/>;
 };
 
 export default HeaderContainer;

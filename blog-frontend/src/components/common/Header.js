@@ -1,7 +1,8 @@
 import React from 'react'
-// import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
+import { logout } from '../../modules/user'
 
 const Wrap = styled.div`
     font-family: 'Nanum Gothic', sans-serif;
@@ -22,7 +23,7 @@ const Intro = styled.div`
     width: 100%;
 
 `
-const Header = styled.div`
+const Header1 = styled.div`
     display: flex;
     width: 1280px;
     height: 80px;
@@ -60,31 +61,49 @@ margin-left: 84px;
     list-style: none;
     /* color: #ff540f; */
 `
-
-const Navbar= () => {
-
-    
+const UserInfo = styled.div`
+  font-weight: 800;
+  margin-left: 84px;
+  
+`
+const Header = () => {
+    const { user } = useSelector(
+        ({user}) => ({
+          user : user.user
+        })
+      )
+      const dispatch = useDispatch();
+   
+      
+        const onLogout = () => {
+            dispatch(logout());
+        }   
      
   return (
     
     <Wrap>
      <Intro>
-         <Header>
+         <Header1>
             <Logo>
                 <Image src='../images/테코몽.png' alt='사진'/>
-                 <Name>테코몽 공식 블로그</Name>
+                 <Name><Link to='/'>테코몽 공식 블로그</Link></Name>
             </Logo>
             <Nav>
-                <Navli>HOME</Navli>
-                <Navli>ABOUT</Navli>
-                <Navli>SERVICE</Navli>
-                <Navli>CONTACT</Navli>
-            </Nav>
-         </Header>
+             {user ? ( <Navli><Link to='/' onClick={onLogout}>로그아웃</Link></Navli>)
+                  
+              : (
+                <Navli><Link to='/login'>로그인</Link></Navli>
+                )}
+                <Navli><Link to='/register'>회원가입</Link></Navli>
+                <Navli>홈</Navli>
+                <Navli>마이페이지</Navli>
+                {user? (<UserInfo>ID: {user.username}</UserInfo>) : (<></>)}
+                </Nav>
+         </Header1>
       </Intro>
     </Wrap>
     
   )
 }
 
-export default Navbar
+export default Header
