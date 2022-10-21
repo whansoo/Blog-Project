@@ -95,7 +95,7 @@ const Header = () => {
                 <Navli><Link to='/login'>로그인</Link></Navli>
                 )}
                 <Navli><Link to='/register'>회원가입</Link></Navli>
-                <Navli>홈</Navli>
+                {/* <Navli>홈</Navli> */}
                 <Navli>마이페이지</Navli>
                 {user? (<UserInfo>ID: {user.username}</UserInfo>) : (<></>)}
                 </Nav>
