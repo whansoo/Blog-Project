@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import HeaderContainer from "../containers/common/HeaderContainer";
 import PostViewerContainer from "../containers/post/PostViewerContainer";
 
@@ -7,6 +8,7 @@ const PostPage = () => {
         <>
          <HeaderContainer/>
          <PostViewerContainer/>
+         <Footer/>
         </>
     )
 };
