@@ -122,7 +122,17 @@ put()함수는 액션을 스토어로 디스패치한다.
 </details>
 
 <details>
-    <summary>2. 2022.10.15 ~ 2022.10.21 - 로그인/회원가입 구현, 글쓰기 기능 구현</summary></br>
+    <summary>2. 2022.10.15 ~ 2022.10.20 - 로그인/회원가입 구현</summary></br>
 
-
+- styled-components 적용 : styled-components 라이브러리를 사용하여 리액트 컴포넌트를 쉽게 만들 수 있으며 Javascript 코드 내에서 일반 CSS로 구성 요소의 스타일을 지정할 수 있다.
+- 로그인/회원가입 UI 구현 : 화면에 보이는 것들은 모두 components디렉터리에 작성한다. 여기서는 로그인/회원가입을 구현 할 것이므로 components안에 auth폴더를 만들고 js파일을 만들어 코드를 작성한다.
+공통으로 사용 할 것들은 common이라는 디렉터리 안에 코드를 작성한다. components안에서 작성한 코드들은 pagse디렉터리안 page.js라는 파일을 만들어서 import로 불러와 하나의 페이지를 만든다.
+- pages 구현 : componentes안에 header, post, posts, footer등을 작성 한 것들은 pages안에서 필요 한 것들만 불러와 하나의 페이지를 만든다.
+- 리덕스로 로그인/회원가입 상태 관리 : modules디렉터리 안에 액션타입, 액션생성함수, 리듀서를 작성한다. 모듈 작성 후에 src 디렉터리에 containers 디렉터리를 만든 후 다양한 컨테이너 컴포넌트들을 종류별로 분류하여 만든다. 컨테이너 컴포넌트에서는 useDispatch와 useSelector 함수를 사용하여 컴포넌트를 리덕스와 연동시킨다. 위 컴포넌트에서는 onChange 함수와 onSubmit 함수를 구현하여 필요한 액션을 디스패치하도록 구현해 주었다. 또한, useEffect를 사용하여 맨 처음 렌더링 후 initializeForm 액션 생성 함수를 호출했다. 이 작업을 하지 않으면, 로그인 페이지에서 값을 입력한 뒤 다른 페이지로 이동했다가 다시 돌아왔을 때 값이 유지된 상태로 보이게 된다.
+- API 연동 : axios를 사용하여 API를 연동한다. 그리고 리덕스에서 비동기 작업을 쉽게 관리하기 위해 redux-saga와 이전에 만들어서 사용했던 createRequestSaga 유틸 함수를 이용한다.
+- 프록시 설정 : 현재 백엔드 서버는 4000 포트, 리액트 개발 서버는 3000 포트로 열려 있기 때문에 별도의 설정 없이 API를 호출하려고 하면 오류가 발생한다. 이 오류를 CORS오류라고 부르는데 네트워크 요청을 할 때 주소가 다른 경우에 발생한다. 이 오류를 해결하려면 다른 주소에서도 API를 호출할 수 있도록 서버 쪽 코드를 수정해야 한다. 여기서는 프록시라는 기능을 사용하여 해결 할 것이다.
+- API함수 작성 : 회원 인증에 필요한 API를 사용하기 쉽도록 함수화하여 파일로 작성.
+- 회원가입/로그인 에러 처리 : username, password, passwordConfirm 중 하나라도 비어 있을 때, password와 passwordConfirm 값이 일치하지 않을 때, username이 중복될 때 에러가 나타나도록 한다.
+- 로그인 유지 :  localStorage를 사용하여 로그인 유지를 한다.
+- 로그아웃 기능 : 로그아웃 API를 호출하고, localStorage 안의 값을 없애 주면 된다.
 </details>
