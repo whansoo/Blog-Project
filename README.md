@@ -136,3 +136,15 @@ put()함수는 액션을 스토어로 디스패치한다.
 - 로그인 유지 :  localStorage를 사용하여 로그인 유지를 한다.
 - 로그아웃 기능 : 로그아웃 API를 호출하고, localStorage 안의 값을 없애 주면 된다.
 </details>
+
+<details>
+    <summary>3. 2022.10.18 ~ 2022.10.21 - 글쓰기 구현/글 읽기</summary></br>
+
+
+</details>
+
+<details>
+    <summary>4. 2022.10.22 ~ 2022.10.24 - 글목록 구현</summary></br>
+
+
+</details>
