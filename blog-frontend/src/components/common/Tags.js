@@ -4,14 +4,17 @@ import palette from "../../lib/styles/palette";
 import { Link } from "react-router-dom";
 
 const TagsBlock = styled.div`
+  color: #4c4c4c;
+  font-family: Gilroy,Noto Sans KR,sans-serif;
+  font-weight: 500;
+  letter-spacing: .7px;
   margin-top: 0.5rem;
   .tag {
     display: inline-block;
-    color: ${palette.cyan[7]};
     text-decoration: none;
     margin-right: 0.5rem;
     &:hover {
-        color: ${palette.cyan[6]};
+         color: ${palette.cyan[6]};
     }
   }
 `;

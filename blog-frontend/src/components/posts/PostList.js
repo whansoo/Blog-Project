@@ -1,20 +1,20 @@
 import React from "react";
 import styled from "styled-components";
 // import Responsive from "../common/Responsive";
-// import Button from "../common/Button";
 import palette from "../../lib/styles/palette";
 import Tags from "../common/Tags";
 import { Link } from "react-router-dom";
 import SubInfo from "../common/SubInfo";
+import CreateIcon from '@mui/icons-material/Create';
 
 const Wrap = styled.div`
-border-top: 2px solid red;
+border-top: 2px solid ${palette.gray[2]};
 padding-top: 20px;
 `
 const PostListBlock = styled.div`
   padding-left: 1rem;
  padding-right:1rem;
- width:1200px;
+   width:1150px;
   margin:0 auto; /*중앙 정렬*/
 `;
 
@@ -25,7 +25,7 @@ const WritePostButtonWrapper = styled.div`
 `;
 
 const PostItemBlock = styled.div`
- 
+  padding: 41px;
   padding-top: 3rem;
   padding-bottom: 3rem;
   /* 맨 위 포스트는 padding-top 없음 */
@@ -51,11 +51,28 @@ const PostItemBlock = styled.div`
     margin-top: 1rem;
   }
 `;
-// const SubInfo = styled.div`
-//   /* margin-top: 1rem; */
-//   color: ${palette.gray[6]};
+const PostTag = styled.div`
+    display: inline-block;
+    height: 32px;
+    border: 1px solid #d6d6d6;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0 16px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    :hover {
+      background-color: #d6d6d6;
+    }
+`
 
-
+const PostTagblock = styled.div`
+  padding-left: 1rem;
+ padding-right:1rem;
+   width:  1000px;
+  margin:0 auto; /*중앙 정렬*/
+`
 
 /* span 사이에 가운뎃점 문자 보여 주기 */
 //   span + span:before {
@@ -66,18 +83,7 @@ const PostItemBlock = styled.div`
 //   }
 // `;
 
-// const Tags = styled.div`
-// margin-top:0.5rem;
-// .tag {
-//   display:inline-block;
-//   color:${palette.cyan[7]};
-//   text-decoration:none;
-//  margin-right:0.5rem;
-//   &amp;:hover{
-//    color:${palette.cyan[6]};
-//   }
-// }
-// `;
+
 // const Button = styled.button`
 //   width: 40%;
 //   border: none;
@@ -103,6 +109,16 @@ return (
 );
 };
 
+const PostTags = ({ post }) => {
+  const {tags} = post; 
+return (
+  <PostTag>
+  <Tags tags={tags} />
+  </PostTag>
+);
+};
+
+
 
 
 const PostList = ({ posts, loading, error, showWriteButton }) => {
@@ -112,15 +128,23 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
     }
 return (
 <Wrap>
+<PostTagblock>
+{!loading && posts && (
+        <div>
+        {posts.map(post => (
+            <PostTags post={post} key={post._id}/>
+        ))}
+         </div>
+      )}
+  </PostTagblock>
   <PostListBlock>
-    <WritePostButtonWrapper>
-        {showWriteButton && (<button><Link to="/write">
-        새 글 작성하기
+   <WritePostButtonWrapper>
+        {showWriteButton && (<button style={{border: 0, outline: 0, backgroundColor: '#fff'}}><Link to="/write">
+        <CreateIcon/>click
         </Link></button>
       )}
       
     </WritePostButtonWrapper>
-     
       {/* 로딩 중이 아니고, 포스트 배열이 존재할 때만 보여 줌 */}
       {!loading && posts && (
         <div>

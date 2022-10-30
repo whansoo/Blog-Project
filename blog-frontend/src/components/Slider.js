@@ -7,9 +7,10 @@ import { sliderItems } from "../data";
 import { Link } from 'react-router-dom';
 
 const Container = styled.div`
-  margin: 100px auto;
+  margin: 120px auto 40px;
   width: 90%;
-  height: 65vh;
+  /* height: 65vh; */
+  height: 500px;
   display: flex;
   position: relative;
   overflow: hidden;
@@ -35,7 +36,6 @@ const Arrow = styled.div`
 `;
 
 const Wrapper = styled.div`
-
   height: 100%;
   display: flex;
   transition: all 1.5s ease;
@@ -43,9 +43,9 @@ const Wrapper = styled.div`
 `;
 
 const Slide = styled.div`
-
   width: 100vw;
-  height: 100vh;
+  /* height: 90vh; */
+  height: 700px;
   display: flex;
   align-items: center;
   background-color: #${(props) => props.bg};
@@ -64,7 +64,7 @@ const Image = styled.img`
 
 const InfoContainer = styled.div`
   flex: 1;
-  margin-bottom: 350px;
+  margin-bottom: 240px;
   
 `;
 
@@ -92,7 +92,9 @@ const Button = styled.button`
       transform: scale(1.1);
     }
 `;
-
+const Wrap = styled.div`
+/* background-color: #f5f5f5; */
+`
 const Slider = () => {
   const [slideIndex, setSlideIndex] = useState(0);
   const handleClick = (direction) => {
@@ -104,12 +106,11 @@ const Slider = () => {
   };
 
   return (
+    <Wrap>
     <Container>
-        
       <Arrow direction="left" onClick={() => handleClick("left")}>
         <ArrowLeftOutlinedIcon/>
       </Arrow>
-     
       <Wrapper slideIndex={slideIndex}>
         {sliderItems.map((item) => (
           <Slide bg={item.bg} key={item.id}>
@@ -128,6 +129,7 @@ const Slider = () => {
         <ArrowRightOutlinedIcon />
       </Arrow>
     </Container>
+    </Wrap>
   );
 };
 

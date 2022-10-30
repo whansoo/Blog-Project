@@ -124,7 +124,7 @@ const Footer = () => {
           <ListItem>나이</ListItem>
           <ListItem>키</ListItem>
           <ListItem>학교</ListItem>
-        </List>
+        </List> 
       </Center>
       <Right>
         <Title>Contact</Title>

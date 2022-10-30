@@ -3,7 +3,13 @@ import qs from 'qs';
 import Button from '../common/Button';
 
 const PaginationBlock = styled.div`
+  ::before,
+  ::after {
+	content: "";
+	height: 1px;
   width: 320px;
+  } 
+  width: 100%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
