@@ -13,16 +13,13 @@ const Container = styled.div`
   position: relative;
   height: 100vh;
   padding: 10px;
-  /* background-color: teal; */
   background-image: url("images/cat2.png");
-  /* background-size: 790px; */
   background-size: 650px;
 `;
 
 const Wrapper = styled.div`
   padding: 41px;
   box-shadow: 17px 11px 5px rgba(0, 0, 0, 0.35);
-  /* background: #f5f5f5; */
   border-radius: 10px;
   width: 23vw;
   height: 34vw;
@@ -37,11 +34,9 @@ const Title = styled.h1`
   font-size: 24px;
   font-weight: 300;
   font-family:futurademregular;
-  /* color: rgb(34,34,34); */
   color: white;
 `;
 const RegisterRouter = styled.h2`
-  /* color: #4b4b4b; */
   color: white;
   font-weight: 400;
   font-size: 18px;
@@ -69,7 +64,6 @@ const Input = styled.input`
 
 const Button = styled.button`
 color: white;
-  /* background: #49709f; */
   background: aqua;
   border: none;
   border-radius: 26px;

@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engine": {
+    "node": "14.2.0",
+    "npm": "6.14.4"
+  },
   "scripts": {
     "start": "node -r esm src",
     "start:dev": "nodemon --watch src/ -r esm src/index.js"
@@ -21,8 +25,11 @@
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-router": "^12.0.0",
+    "koa-send": "^5.0.1",
+    "koa-static": "^5.0.0",
     "mongoose": "^6.6.4",
     "nodemon": "^2.0.20",
+    "path": "^0.12.7",
     "sanitize-html": "^2.7.2"
   }
 }
