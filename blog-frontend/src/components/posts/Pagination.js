@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import qs from 'qs';
 import Button from '../common/Button';
+import React from 'react';
 
 const PaginationBlock = styled.div`
   ::before,

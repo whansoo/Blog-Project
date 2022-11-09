@@ -161,5 +161,5 @@ return (
 
 
 
-export default PostList;
+export default React.memo(PostList);
 
