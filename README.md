@@ -7,7 +7,7 @@
 >안녕하세요 **TECOMOG BLOG** 입니다.
 >**TECOMOG**이라는 이름은 TECH, COMMUNICATION, BLOG의 합성어로 기존 기술블로그 방식에서 커뮤니케이션을 접목 시켜 새롭게 만든 BLOG입니다.
 
->프로젝트 주소 : http://whanblog.herokuapp.com/
+>프로젝트 주소 : https://whanblog-whansoo.koyeb.app/
 
 
 
